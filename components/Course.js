@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
     height: 60,
     padding: 10,
     minWidth: 90,
+    
     maxWidth: 90,
     backgroundColor: '#66b0ff',
   },
