@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Course from './Course';
+import CourseSelector from './CourseSelector'
 import { StyleSheet, ScrollView, View} from 'react-native';
 import TermSelector from './TermSelector'
 
@@ -14,7 +14,7 @@ const CourseList = ({courses}) => {
         <View style ={styles.container}>
             <TermSelector selectedTerm={selectedTerm} setSelectedTerm={setSelectedTerm} />
             <View style={styles.courseList}>
-                { termCourses.map(course => <Course key={course.id} course={course} />) }
+                <CourseSelector courses={termCourses} />
             </View>
         </View>
       </ScrollView>
